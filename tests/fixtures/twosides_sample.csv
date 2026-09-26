@@ -1,0 +1,8 @@
+d1_name,d2_name,event,prr,n_reports
+Simvastatin,Clarithromycin,Rhabdomyolysis,8.2,41
+Clarithromycin,Simvastatin,Myalgia,3.1,22
+Warfarin,Fluconazole,Haemorrhage,4.5,37
+Warfarin,Fluconazole,INR increased,6.0,19
+Warfarin,Fluconazole,Nausea,1.2,5
+Citalopram,Ondansetron,Electrocardiogram QT prolonged,5.4,12
+Metformin,Lisinopril,Cough,1.1,4

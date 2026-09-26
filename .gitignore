@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+node_modules/
+web/.next/
+data/raw/
+.claude/.gate_count
+.claude/.gate.log
+.claude/gate_off

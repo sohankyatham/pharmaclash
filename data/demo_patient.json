@@ -1,0 +1,12 @@
+{
+  "name": "Demo patient (synthetic)",
+  "age": 80,
+  "regimen": ["simvastatin", "amlodipine", "apixaban", "citalopram",
+              "oxybutynin", "metformin", "lisinopril", "omeprazole"],
+  "scenario": [
+    {"step": "load", "note": "Mostly calm graph: omeprazole-citalopram (CYP2C19) and bleeding/brain-fog meters already elevated."},
+    {"step": "add", "drug": "nirmatrelvir_ritonavir", "note": "Paxlovid: CYP3A4 lights up; simvastatin contraindicated."},
+    {"step": "add", "drug": "clarithromycin", "note": "Antibiotic: more CYP3A4 load plus QT stacking with citalopram."},
+    {"step": "optimize", "locked": ["nirmatrelvir_ritonavir"], "note": "Fix this regimen: statin, SSRI, bladder drug, PPI and antibiotic swaps; apixaban and amlodipine flagged for clinician."}
+  ]
+}

@@ -1,0 +1,388 @@
+[
+ {
+  "id": "acetaminophen",
+  "name": "Acetaminophen",
+  "brand": "Tylenol",
+  "class": "analgesic",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "alprazolam",
+  "name": "Alprazolam",
+  "brand": "Xanax",
+  "class": "benzodiazepine",
+  "qt_risk": "none",
+  "acb_score": 1,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "amiodarone",
+  "name": "Amiodarone",
+  "brand": "Pacerone",
+  "class": "antiarrhythmic",
+  "qt_risk": "known",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "amitriptyline",
+  "name": "Amitriptyline",
+  "brand": "Elavil",
+  "class": "tricyclic_antidepressant",
+  "qt_risk": "conditional",
+  "acb_score": 3,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "amlodipine",
+  "name": "Amlodipine",
+  "brand": "Norvasc",
+  "class": "calcium_channel_blocker",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "apixaban",
+  "name": "Apixaban",
+  "brand": "Eliquis",
+  "class": "anticoagulant_doac",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": true,
+  "alternatives": []
+ },
+ {
+  "id": "aspirin_low_dose",
+  "name": "Aspirin (low dose)",
+  "brand": "",
+  "class": "antiplatelet",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": true,
+  "alternatives": []
+ },
+ {
+  "id": "atenolol",
+  "name": "Atenolol",
+  "brand": "Tenormin",
+  "class": "beta_blocker",
+  "qt_risk": "none",
+  "acb_score": 1,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "atorvastatin",
+  "name": "Atorvastatin",
+  "brand": "Lipitor",
+  "class": "statin",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": [
+   "pravastatin",
+   "rosuvastatin"
+  ]
+ },
+ {
+  "id": "azithromycin",
+  "name": "Azithromycin",
+  "brand": "Zithromax",
+  "class": "macrolide_antibiotic",
+  "qt_risk": "known",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "citalopram",
+  "name": "Citalopram",
+  "brand": "Celexa",
+  "class": "ssri",
+  "qt_risk": "known",
+  "acb_score": 1,
+  "bleeding_risk": true,
+  "alternatives": [
+   "sertraline"
+  ]
+ },
+ {
+  "id": "clarithromycin",
+  "name": "Clarithromycin",
+  "brand": "Biaxin",
+  "class": "macrolide_antibiotic",
+  "qt_risk": "known",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": [
+   "azithromycin"
+  ]
+ },
+ {
+  "id": "clopidogrel",
+  "name": "Clopidogrel",
+  "brand": "Plavix",
+  "class": "antiplatelet_p2y12",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": true,
+  "alternatives": []
+ },
+ {
+  "id": "diphenhydramine",
+  "name": "Diphenhydramine",
+  "brand": "Benadryl",
+  "class": "antihistamine_first_gen",
+  "qt_risk": "none",
+  "acb_score": 3,
+  "bleeding_risk": false,
+  "alternatives": [
+   "loratadine"
+  ]
+ },
+ {
+  "id": "donepezil",
+  "name": "Donepezil",
+  "brand": "Aricept",
+  "class": "cholinesterase_inhibitor",
+  "qt_risk": "known",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "fluconazole",
+  "name": "Fluconazole",
+  "brand": "Diflucan",
+  "class": "azole_antifungal",
+  "qt_risk": "known",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "furosemide",
+  "name": "Furosemide",
+  "brand": "Lasix",
+  "class": "loop_diuretic",
+  "qt_risk": "conditional",
+  "acb_score": 1,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "ibuprofen",
+  "name": "Ibuprofen",
+  "brand": "Advil",
+  "class": "nsaid",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": true,
+  "alternatives": [
+   "acetaminophen"
+  ]
+ },
+ {
+  "id": "lisinopril",
+  "name": "Lisinopril",
+  "brand": "Zestril",
+  "class": "ace_inhibitor",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "loratadine",
+  "name": "Loratadine",
+  "brand": "Claritin",
+  "class": "antihistamine_second_gen",
+  "qt_risk": "none",
+  "acb_score": 1,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "metformin",
+  "name": "Metformin",
+  "brand": "Glucophage",
+  "class": "biguanide",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "metoprolol",
+  "name": "Metoprolol",
+  "brand": "Lopressor",
+  "class": "beta_blocker",
+  "qt_risk": "none",
+  "acb_score": 1,
+  "bleeding_risk": false,
+  "alternatives": [
+   "atenolol"
+  ]
+ },
+ {
+  "id": "mirabegron",
+  "name": "Mirabegron",
+  "brand": "Myrbetriq",
+  "class": "bladder_beta3_agonist",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "molnupiravir",
+  "name": "Molnupiravir",
+  "brand": "Lagevrio",
+  "class": "covid_antiviral",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "omeprazole",
+  "name": "Omeprazole",
+  "brand": "Prilosec",
+  "class": "proton_pump_inhibitor",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": [
+   "pantoprazole"
+  ]
+ },
+ {
+  "id": "ondansetron",
+  "name": "Ondansetron",
+  "brand": "Zofran",
+  "class": "antiemetic_5ht3",
+  "qt_risk": "known",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "oxybutynin",
+  "name": "Oxybutynin",
+  "brand": "Ditropan",
+  "class": "bladder_antimuscarinic",
+  "qt_risk": "none",
+  "acb_score": 3,
+  "bleeding_risk": false,
+  "alternatives": [
+   "mirabegron"
+  ]
+ },
+ {
+  "id": "pantoprazole",
+  "name": "Pantoprazole",
+  "brand": "Protonix",
+  "class": "proton_pump_inhibitor",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "paroxetine",
+  "name": "Paroxetine",
+  "brand": "Paxil",
+  "class": "ssri",
+  "qt_risk": "none",
+  "acb_score": 3,
+  "bleeding_risk": true,
+  "alternatives": [
+   "sertraline"
+  ]
+ },
+ {
+  "id": "nirmatrelvir_ritonavir",
+  "name": "Paxlovid (nirmatrelvir/ritonavir)",
+  "brand": "Paxlovid",
+  "class": "covid_antiviral",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": [
+   "molnupiravir"
+  ]
+ },
+ {
+  "id": "pravastatin",
+  "name": "Pravastatin",
+  "brand": "Pravachol",
+  "class": "statin",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "quetiapine",
+  "name": "Quetiapine",
+  "brand": "Seroquel",
+  "class": "antipsychotic_atypical",
+  "qt_risk": "possible",
+  "acb_score": 3,
+  "bleeding_risk": false,
+  "alternatives": []
+ },
+ {
+  "id": "rosuvastatin",
+  "name": "Rosuvastatin",
+  "brand": "Crestor",
+  "class": "statin",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": [
+   "pravastatin"
+  ]
+ },
+ {
+  "id": "sertraline",
+  "name": "Sertraline",
+  "brand": "Zoloft",
+  "class": "ssri",
+  "qt_risk": "conditional",
+  "acb_score": 1,
+  "bleeding_risk": true,
+  "alternatives": []
+ },
+ {
+  "id": "simvastatin",
+  "name": "Simvastatin",
+  "brand": "Zocor",
+  "class": "statin",
+  "qt_risk": "none",
+  "acb_score": 0,
+  "bleeding_risk": false,
+  "alternatives": [
+   "pravastatin",
+   "rosuvastatin"
+  ]
+ },
+ {
+  "id": "warfarin",
+  "name": "Warfarin",
+  "brand": "Coumadin",
+  "class": "anticoagulant_vka",
+  "qt_risk": "none",
+  "acb_score": 1,
+  "bleeding_risk": true,
+  "alternatives": []
+ }
+]

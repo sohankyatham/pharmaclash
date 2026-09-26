@@ -1,0 +1,327 @@
+{
+ "regimen": [
+  "simvastatin",
+  "amlodipine",
+  "apixaban",
+  "citalopram",
+  "oxybutynin",
+  "metformin",
+  "lisinopril",
+  "omeprazole",
+  "nirmatrelvir_ritonavir"
+ ],
+ "nodes": [
+  {
+   "id": "amlodipine",
+   "label": "Amlodipine",
+   "type": "drug"
+  },
+  {
+   "id": "apixaban",
+   "label": "Apixaban",
+   "type": "drug"
+  },
+  {
+   "id": "citalopram",
+   "label": "Citalopram",
+   "type": "drug"
+  },
+  {
+   "id": "lisinopril",
+   "label": "Lisinopril",
+   "type": "drug"
+  },
+  {
+   "id": "metformin",
+   "label": "Metformin",
+   "type": "drug"
+  },
+  {
+   "id": "nirmatrelvir_ritonavir",
+   "label": "Paxlovid (nirmatrelvir/ritonavir)",
+   "type": "drug"
+  },
+  {
+   "id": "omeprazole",
+   "label": "Omeprazole",
+   "type": "drug"
+  },
+  {
+   "id": "oxybutynin",
+   "label": "Oxybutynin",
+   "type": "drug"
+  },
+  {
+   "id": "simvastatin",
+   "label": "Simvastatin",
+   "type": "drug"
+  },
+  {
+   "id": "CYP2C19",
+   "label": "CYP2C19",
+   "type": "enzyme"
+  },
+  {
+   "id": "CYP3A4",
+   "label": "CYP3A4",
+   "type": "enzyme"
+  },
+  {
+   "id": "risk_qt",
+   "label": "QT prolongation",
+   "type": "risk"
+  },
+  {
+   "id": "risk_anticholinergic",
+   "label": "Anticholinergic burden",
+   "type": "risk"
+  },
+  {
+   "id": "risk_bleeding",
+   "label": "Bleeding",
+   "type": "risk"
+  }
+ ],
+ "edges": [
+  {
+   "source": "amlodipine",
+   "target": "CYP3A4",
+   "kind": "substrate",
+   "severity": "moderate"
+  },
+  {
+   "source": "apixaban",
+   "target": "CYP3A4",
+   "kind": "substrate",
+   "severity": "high"
+  },
+  {
+   "source": "citalopram",
+   "target": "CYP2C19",
+   "kind": "substrate",
+   "severity": "moderate"
+  },
+  {
+   "source": "citalopram",
+   "target": "CYP3A4",
+   "kind": "substrate",
+   "severity": "moderate"
+  },
+  {
+   "source": "nirmatrelvir_ritonavir",
+   "target": "CYP3A4",
+   "kind": "inhibits",
+   "severity": "contraindicated"
+  },
+  {
+   "source": "nirmatrelvir_ritonavir",
+   "target": "CYP3A4",
+   "kind": "substrate",
+   "severity": "none"
+  },
+  {
+   "source": "omeprazole",
+   "target": "CYP2C19",
+   "kind": "inhibits",
+   "severity": "moderate"
+  },
+  {
+   "source": "omeprazole",
+   "target": "CYP2C19",
+   "kind": "substrate",
+   "severity": "none"
+  },
+  {
+   "source": "oxybutynin",
+   "target": "CYP3A4",
+   "kind": "substrate",
+   "severity": "high"
+  },
+  {
+   "source": "simvastatin",
+   "target": "CYP3A4",
+   "kind": "substrate",
+   "severity": "contraindicated"
+  },
+  {
+   "source": "citalopram",
+   "target": "risk_qt",
+   "kind": "contributes",
+   "severity": "low"
+  },
+  {
+   "source": "citalopram",
+   "target": "risk_anticholinergic",
+   "kind": "contributes",
+   "severity": "high"
+  },
+  {
+   "source": "oxybutynin",
+   "target": "risk_anticholinergic",
+   "kind": "contributes",
+   "severity": "high"
+  },
+  {
+   "source": "apixaban",
+   "target": "risk_bleeding",
+   "kind": "contributes",
+   "severity": "moderate"
+  },
+  {
+   "source": "citalopram",
+   "target": "risk_bleeding",
+   "kind": "contributes",
+   "severity": "moderate"
+  }
+ ],
+ "interactions": [
+  {
+   "id": "nirmatrelvir_ritonavir__simvastatin__CYP3A4__increased_levels",
+   "perpetrator": "nirmatrelvir_ritonavir",
+   "victim": "simvastatin",
+   "enzyme": "CYP3A4",
+   "effect": "increased_levels",
+   "severity": "contraindicated",
+   "facts": [
+    "Paxlovid (nirmatrelvir/ritonavir) is a strong inhibitor of CYP3A4.",
+    "Simvastatin is a sensitive substrate of CYP3A4.",
+    "Paxlovid (nirmatrelvir/ritonavir) can raise blood levels of Simvastatin via CYP3A4.",
+    "Simvastatin is contraindicated with strong CYP3A4 inhibitors.",
+    "Label contraindicates strong CYP3A4 inhibitors (risk of rhabdomyolysis)."
+   ],
+   "sources": [
+    "PAXLOVID_LABEL",
+    "FDA_DDI",
+    "DAILYMED"
+   ]
+  },
+  {
+   "id": "nirmatrelvir_ritonavir__apixaban__CYP3A4__increased_levels",
+   "perpetrator": "nirmatrelvir_ritonavir",
+   "victim": "apixaban",
+   "enzyme": "CYP3A4",
+   "effect": "increased_levels",
+   "severity": "high",
+   "facts": [
+    "Paxlovid (nirmatrelvir/ritonavir) is a strong inhibitor of CYP3A4.",
+    "Apixaban is a moderate sensitive substrate of CYP3A4.",
+    "Paxlovid (nirmatrelvir/ritonavir) can raise blood levels of Apixaban via CYP3A4.",
+    "Also a P-gp substrate (transporters not modeled). Anticoagulant changes are a clinician decision."
+   ],
+   "sources": [
+    "PAXLOVID_LABEL",
+    "FDA_DDI",
+    "DAILYMED"
+   ]
+  },
+  {
+   "id": "nirmatrelvir_ritonavir__oxybutynin__CYP3A4__increased_levels",
+   "perpetrator": "nirmatrelvir_ritonavir",
+   "victim": "oxybutynin",
+   "enzyme": "CYP3A4",
+   "effect": "increased_levels",
+   "severity": "high",
+   "facts": [
+    "Paxlovid (nirmatrelvir/ritonavir) is a strong inhibitor of CYP3A4.",
+    "Oxybutynin is a moderate sensitive substrate of CYP3A4.",
+    "Paxlovid (nirmatrelvir/ritonavir) can raise blood levels of Oxybutynin via CYP3A4.",
+    "Beers: strongly anticholinergic."
+   ],
+   "sources": [
+    "PAXLOVID_LABEL",
+    "FDA_DDI",
+    "FLOCKHART",
+    "ACB",
+    "BEERS"
+   ]
+  },
+  {
+   "id": "nirmatrelvir_ritonavir__amlodipine__CYP3A4__increased_levels",
+   "perpetrator": "nirmatrelvir_ritonavir",
+   "victim": "amlodipine",
+   "enzyme": "CYP3A4",
+   "effect": "increased_levels",
+   "severity": "moderate",
+   "facts": [
+    "Paxlovid (nirmatrelvir/ritonavir) is a strong inhibitor of CYP3A4.",
+    "Amlodipine is a minor substrate of CYP3A4.",
+    "Paxlovid (nirmatrelvir/ritonavir) can raise blood levels of Amlodipine via CYP3A4.",
+    "No same-class alternative avoids CYP3A4; dose adjustment is a clinician decision."
+   ],
+   "sources": [
+    "PAXLOVID_LABEL",
+    "FDA_DDI",
+    "FLOCKHART",
+    "DAILYMED"
+   ]
+  },
+  {
+   "id": "nirmatrelvir_ritonavir__citalopram__CYP3A4__increased_levels",
+   "perpetrator": "nirmatrelvir_ritonavir",
+   "victim": "citalopram",
+   "enzyme": "CYP3A4",
+   "effect": "increased_levels",
+   "severity": "moderate",
+   "facts": [
+    "Paxlovid (nirmatrelvir/ritonavir) is a strong inhibitor of CYP3A4.",
+    "Citalopram is a minor substrate of CYP3A4.",
+    "Paxlovid (nirmatrelvir/ritonavir) can raise blood levels of Citalopram via CYP3A4.",
+    "Label limits dose with CYP2C19 inhibitors because of dose-dependent QT prolongation. SSRIs raise bleeding risk with anticoagulants."
+   ],
+   "sources": [
+    "PAXLOVID_LABEL",
+    "FDA_DDI",
+    "DAILYMED",
+    "CREDIBLEMEDS",
+    "ACB"
+   ]
+  },
+  {
+   "id": "omeprazole__citalopram__CYP2C19__increased_levels",
+   "perpetrator": "omeprazole",
+   "victim": "citalopram",
+   "enzyme": "CYP2C19",
+   "effect": "increased_levels",
+   "severity": "moderate",
+   "facts": [
+    "Omeprazole is a moderate inhibitor of CYP2C19.",
+    "Citalopram is a moderate sensitive substrate of CYP2C19.",
+    "Omeprazole can raise blood levels of Citalopram via CYP2C19.",
+    "Label limits dose with CYP2C19 inhibitors because of dose-dependent QT prolongation. SSRIs raise bleeding risk with anticoagulants."
+   ],
+   "sources": [
+    "FDA_DDI",
+    "DAILYMED",
+    "CREDIBLEMEDS",
+    "ACB"
+   ]
+  }
+ ],
+ "meters": {
+  "qt": {
+   "score": 3,
+   "level": "low",
+   "contributors": [
+    "citalopram"
+   ]
+  },
+  "anticholinergic": {
+   "score": 4,
+   "level": "high",
+   "contributors": [
+    "citalopram",
+    "oxybutynin"
+   ]
+  },
+  "bleeding": {
+   "score": 2,
+   "level": "moderate",
+   "contributors": [
+    "apixaban",
+    "citalopram"
+   ]
+  }
+ },
+ "total_risk": 41,
+ "unknown_drugs": []
+}

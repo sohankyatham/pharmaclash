@@ -136,8 +136,10 @@ For LLM explanations, copy `.env.example` to `.env` and add an `OPENAI_API_KEY`.
 Tests:
 
 ```bash
-pytest -q
+pytest -q        # 30 passed
 ```
+
+The suite covers phases 1–4 (engine, optimizer, API, frontend contract). Phases 5 and 6 — evidence retrieval and ML signal detection — are specified in `TASKS.md` but not implemented; their placeholder tests are excluded in `pytest.ini`.
 
 ---
 
